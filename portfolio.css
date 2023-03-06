@@ -1,0 +1,13 @@
+:root{
+    --bigger:28px
+}
+*,html, body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-transform: capitalize; 
+}
+nav{
+    display: flex;
+    font-size: var(--bigger);
+}
