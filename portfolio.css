@@ -1,13 +1,134 @@
 :root{
     --bigger:28px
 }
-*,html, body{
+*{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    text-transform: capitalize; 
+   font-family: Arial, Helvetica, sans-serif;
 }
-nav{
-    display: flex;
-    font-size: var(--bigger);
+body{
+    min-height: 100%;
+    /* background: url(./resources/black-picture10.jpg); */
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -99;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(255 , 255 , 255 , .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  z-index: 100;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(35deg, rgba(255, 255, 255, .4),transparent);
+    transition: 2s;
+}
+.header:hover::before{
+    left: 100%;
+}
+.logo{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+color: #fff;
+font-size: 18px;
+text-decoration: none;
+margin-left: 35px;
+transition: .3s ;
+}
+.navbar a:hover{
+    color: #ff0000;
+}
+#menu-icon{
+    font-size: 36px;
+    color: #fff;
+    display: none;
+}
+
+
+
+/* home */
+#home{
+    position: fixed;
+    top: 10.5%;
+    left:0;
+    color: #db0303;
+}
+/* #about{ 
+  
+}
+#skills{
+    
+    
+}
+#projects{
+    
+}
+#contact{
+   
+} */
+/* media Query */
+@media screen and (max-width:992px) {
+    .header{
+        padding:1.25rem 4% ;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+       position: fixed;
+       top: 100%;
+       left: 0;
+       width: 100%;
+       padding: .5rem 4%;
+       
+       display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        margin: 1.3rem 0;
+    }
+    .nav-bg{
+        position: fixed;
+        top: 11%;
+        left:0;
+        width: 100%;
+        height:300px ;
+        background:rgba(255 , 255 , 255 , .1); 
+       border-bottom:2px solid rgba(255, 255, 255, .2);
+       backdrop-filter: blur(10px);
+       z-index: 99;
+       display: none;
+    }
+    .nav-bg.active{
+        display: block;
+    }
 }
