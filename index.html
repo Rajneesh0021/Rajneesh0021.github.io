@@ -21,19 +21,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav id="nav-menu">
       <div class="container">
         <a href="#">
           <h3>Rajneesh</h3>
         </a>
-        <ul>
-          <li><a class="active" href="#">Home</a></li>
+        <ul id="nav-menu" >
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#"><i class="fa-solid fa-download"></i>Resume</a></li>
+          <li><a href="resources/Rajneesh_Yadav_Resume.pdf"  target="_blank" download="Rajneesh_Yadav_Resume"> Resume <i class="fa-solid fa-download"></i></a></li>
         </ul>
         <button><span class="material-symbols-outlined">menu</span></button>
         <button><span class="material-symbols-outlined">close</span></button>
@@ -41,7 +41,7 @@
     </nav>
     <!-- nav bar ended -->
 
-    <section class="landing">
+    <section id="home" class="landing">
       <div class="container">
         <div class="socials">
           <a href="https://github.com/Uselessme21" target="_blank">
@@ -52,17 +52,18 @@
           </a>
         </div>
         <div class="info">
-          <h1>Full Stack Web Developer</h1>
-          <h3>I,m Rajneesh Yadav</h3>
-          <p>
+          <h1 id="user-detail-name">hey,<br> I,m Rajneesh Yadav</h1>
+          <h3>Full Stack Web Developer</h3>
+          <p id="user-detail-intro">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
             qui dolores libero? In fugiat corrupti autem, labore cum nobis.
             Earum eveniet ratione qui illum esse ullam placeat odio sequi! Quas?
           </p>
+          <a href="resources/Rajneesh_Yadav_Resume.pdf" target="_blank" download="Rajneesh_Yadav_Resume" class="btn btn-primary"> Resume <i class="fa-solid fa-download"></i></a>
         </div>
 
         <div class="profile-area">
-          <div class="outer-class">
+          <div class="outer-circle">
             <span class="material-symbols-outlined">
                 terminal
                 </span>
@@ -80,9 +81,35 @@
         </div>
       </div>
     </section>
+<!-- end home -->
+
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <h1>About</h1>
+      <div class="container">
+        <div class="image">
+          <img src="./resources/IMG_20230308_145411_256-removebg.png" alt="">
+        </div>
+        <div class="info">
+          <p>met molestias similique magni. Deleniti possimus ducimus laudantium, soluta earum, aspernatur quibusdam quas animi, fugit minus placeat. Distinctio molestias repellendus vel.
+
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus expedita commodi distinctio sit, odio ex ducimus iusto iure quisquam impedit exercitationem harum amet nam praesentium sequi fugit omnis quibusdam vero?</p>
+          <div class="read-more-content">
+            <p>met molestias similique magni. Deleniti possimus ducimus laudantium, soluta earum, aspernatur quibusdam quas animi, fugit minus placeat. Distinctio molestias repellendus vel.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus expedita commodi distinctio sit, odio ex ducimus iusto iure quisquam impedit exercitationem harum amet nam praesentium sequi fugit omnis quibusdam vero?
+            </p>
+          </div>
+          <a class="read-more">Show more</a>
+          <a href="./resources/Rajneesh_Yadav_Resume.pdf">Download Resume</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
+
 <script
-  src="https://kit.fontawesome.com/e962f2728f.js"
-  crossorigin="anonymous"
-></script>
+  src="https://kit.fontawesome.com/e962f2728f.js"crossorigin="anonymous">
+</script>
