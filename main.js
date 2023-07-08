@@ -1,6 +1,7 @@
 const menubtn= document.getElementById('menu-btn')
 const closebtn= document.getElementById('close-btn')
 const menu =document.querySelector('nav .container ul')
+const resue=document.getElementById("resume-link-2")
 // close
 menubtn.addEventListener('click',()=>{
     menu.style.display="block";
@@ -53,3 +54,12 @@ readmorebtn.addEventListener('click', ()=>{
 window.addEventListener('scroll',()=>{
     document.querySelector('nav').classList.toggle('show-box-shadow', window.scrollY > 100)
 })
+
+// resume seen
+resue.addEventListener("click",(e)=>{
+    e.preventDefault();     
+    resume()
+})
+function resume(){
+    window.open("/resources/Rajneesh_Yadav_Resume.pdf","_blank")
+  }
