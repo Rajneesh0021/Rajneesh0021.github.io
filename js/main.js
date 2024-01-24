@@ -3,6 +3,8 @@ const closebtn= document.getElementById('close-btn')
 const menu =document.querySelector('nav .container ul')
 const resue=document.getElementById("resume-link-2")
 // close
+
+
 menubtn.addEventListener('click',()=>{
     menu.style.display="block";
     menubtn.style.display="none";
@@ -63,3 +65,5 @@ resue.addEventListener("click",(e)=>{
 function resume(){
     window.open("/resources/Rajneesh_Yadav_Resume.pdf","_blank")
   }
+
+  console.log(projects)
